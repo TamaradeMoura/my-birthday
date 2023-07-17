@@ -5,10 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAVE THE DATES</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <script src="https://kit.fontawesome.com/2fbcff5999.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>MEU ANIVERSÁRIO</h1>
-    <img src="images/bolo.png" alt="bolo">
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="images/vai_ter_bolo.png" alt="bolo">
+            <p class="hero__text">
+                Venha prestigiar comigo essa data pra lá de especial #trintei <br><span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Onde <i class="fa-solid fa-location-dot"></i></b> 
+                        Minha Casa 
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando <i class="fa-solid fa-calendar-days"></i></b>
+                        02/05/2024 às 20hrs
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Conto com sua presença <i class="fa-solid fa-check"></i></b>
+                        
+                    </li>
+                    <a href="#" class="button button--primary">
+                        Confirmar presença <i class="fa-sharp fa-solid fa-heart fa-bounce"></i></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="event">
+        <div class="container">
+            <img  class="event__image" src="images/feliz.png" alt="Florki feliz">
+            <div class="event__details">
+                <h2 class="event__details__title">Vai ter muita alegria</h2>
+            </div>
+        </div>
+    </section>
+    <section class="event event">
+        <div class="container">
+            <img  class="event__image1" src="images/pensativo.png" alt="Florki feliz">
+            <div class="event__details">
+                <h2 class="event__details__title">Não vai perder hein</h2>
+            </div>
+        </div>
+    </section>
+    <section class="event event">
+        <div class="container">
+            <img  class="event__image2" src="images/coracao.png" alt="Florki feliz">
+            <div class="event__details">
+                <h2 class="event__details__title">Vou ficar muito feliz com você lá<br>
+                    <span class="event__details__span">(nem precisa presente)</span>
+                </h2>
+            </div>
+        </div>
+    </section>
     <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,70 @@
+@use 'variables';
+
+.hero {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: url(../images/bolo.png);
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
+    
+    
+    .container {
+        position: relative;
+    }
+    
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 68.5%;
+        background-color: variables.$corDeTextoSecundario;
+        content: '';
+        opacity: .6;
+        
+    }
+    
+    &__text {
+        margin-top: 40px;
+        margin-bottom: 64px;
+        font-size: 30px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
+        color: variables.$corDeTextoPrimario;
+    }
+    
+    &__logo {
+        margin: 0 auto;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    @media (max-width: 1024px) {
+        &::before {
+            height: 96.5%;
+        }
+    }
+    
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        background-size: 100% 70%;
+        
+        &::before {
+            height: 52.5%;
+        }
+        
+        &__logo {
+            height: 80px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+
+}
+
